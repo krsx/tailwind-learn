@@ -4,23 +4,103 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tailwind Learning</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script>
+      tailwind.config = {
+        theme: {},
+      };
+    </script>
+    <style>
+      /* * {
+        border: 1px solid red;
+      } */
+    </style>
   </head>
   <body>
-    <h1 class="text-5xl font-bold text-blue-200">Welcome Tailwind</h1>
-    <p class="m-3 bg-slate-400">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur at
-      neque maxime autem harum facilis quod cupiditate enim, porro pariatur modi
-      officiis a nesciunt officia vero illo magni deserunt magnam atque ab
-      deleniti dicta nam ipsum corrupti? Aut qui, veniam doloremque quaerat
-      debitis similique voluptates assumenda accusantium nam dignissimos
-      consequatur!
-    </p>
-    <a
-      href="#"
-      class="bg-green-300 text-white p-4 inline-block m-3 rounded shadow hover:bg-green-700"
-      >Ini tombol</a
+    <!-- <h1>Mari Belajar TailwindCSS</h1>
+    <section class="mb-10">
+      <h2>Spacing</h2>
+      <div class="m-13">Margin</div>
+      <div class="py-8">Padding</div>
+    </section>
+    <section class="mb-10 w-1/2">
+      <h2>Sizing</h2>
+      <div class="w-1/2">Kotak1</div>
+      <div class="max-w-xs">Kotak 2</div>
+    </section> -->
+    <section class="mb-10 font-poppins max-w-3xl mx-auto mt-10">
+      <h2 class="mb-4 text-5xl font-bold text-center">
+        <span
+          class="bg-gradient-to-r from-purple-500 via-blue-500 to-red-500 bg-clip-text text-transparent"
+          >Belajar Typography</span
+        >
+      </h2>
+      <div class="mb-10 text-gray-500 text-center">
+        By <a href="#" class="text-blue-500 font-medium">Krisna Erlangga</a>, 11
+        November 2022
+      </div>
+      <p class="mb-4 text-justify">
+        Lorem ipsum dolor, sit amet
+        <a href="" class="underline font-medium">adipisicing</a> elit. Nesciunt
+        fugit earum iste aut repellat pariatur maxime aliquam optio, blanditiis
+        atque voluptatem ipsa assumenda odio maiores natus dicta quaerat
+        deserunt mollitia perspiciatis est explicabo ipsum. Deserunt accusantium
+        placeat animi nisi praesentium, nam suscipit recusandae laboriosam
+        officia molestiae quasi explicabo unde similique!
+      </p>
+      <blockquote class="mb-4 italic font-thin text-xl text-stone-400">
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos,
+        excepturi?"
+      </blockquote>
+      <p class="mb-4 text-justify">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
+        repudiandae optio, tenetur alias eligendi, totam assumenda cupiditate
+        error non ducimus aliquam. Suscipit illum rerum temporibus odit
+        aspernatur corporis aut reprehenderit.
+      </p>
+    </section>
+    <div
+      class="max-w-md h-[28rem] mt-10 bg-slate-200 mx-auto"
+      style="
+        background-image: url('https://source.unsplash.com/448x448?whitehouse');
+      "
     >
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+        dignissimos dicta tempora culpa atque dolores, quibusdam labore tenetur
+        laborum, doloremque ut recusandae, inventore accusamus. Repellendus aut
+        voluptate nisi deleniti consequuntur. Architecto beatae fugiat ut et
+        itaque tempora recusandae veritatis commodi facere maxime illo iure sed
+        quae, nobis, quibusdam, harum quasi obcaecati! Fugiat alias doloribus
+        est cum quo deserunt molestias illo. Provident pariatur, illum sunt
+        quibusdam, officiis odit aspernatur nihil modi deleniti praesentium
+        accusamus quasi mollitia maiores temporibus laudantium. Eius consectetur
+        odit dolorum et quae dicta assumenda vel distinctio iste doloribus.
+        Incidunt dolorum iure rerum esse quas. Eos recusandae obcaecati ducimus.
+        Fugit eligendi vitae, laboriosam est atque incidunt eum, facere,
+        consectetur nesciunt voluptates deleniti quidem inventore similique!
+        Deleniti adipisci ut odit! Numquam nisi quasi sapiente ea, inventore
+        nostrum incidunt atque laborum rem, asperiores eaque corrupti quia. Sunt
+        corporis possimus a quaerat temporibus recusandae blanditiis, doloribus
+        fugit sapiente unde, quos reprehenderit. Corrupti? Neque corporis rerum
+        eaque ex saepe voluptate eveniet dolores atque explicabo nesciunt quo
+        eligendi magni sit in omnis fugiat nam sed, voluptatem vitae. Mollitia
+        necessitatibus natus molestiae nam maiores quos. Quisquam esse,
+        molestiae officia quae non, eius nostrum consequuntur ab et deleniti
+        velit totam unde iusto, alias repellendus dignissimos libero. Laboriosam
+        eius ad rem libero dolores reprehenderit quasi quas saepe. Provident
+        error, quia consectetur commodi sapiente non magnam veniam, sequi
+        voluptatem placeat reprehenderit quo aliquam deserunt vitae consequatur
+        officia assumenda facilis fuga ea saepe ab nemo? Animi accusamus
+        veritatis autem?
+      </p>
+    </div>
   </body>
 </html>

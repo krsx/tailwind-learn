@@ -1,0 +1,6 @@
+untuk menghapus class yang tidak digunakan, SAVE PADA FILE TAILWIND.CONFIG.JS
+npm tailwindcss -i ./src/css/input.css -o ./public/css/style.css --watch
+npx run dev
+ctrl + c == clear terminal
+npx tailwindcss -o ./public/css/final.css --watch (untuk minify size css akhir web)
+
