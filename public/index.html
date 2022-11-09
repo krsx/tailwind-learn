@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -104,18 +104,18 @@
         veritatis autem?
       </p>
     </div> -->
-    <div
+    <!-- <div
       class="my-10 max-w-xl mx-auto h-96 bg-slate-300 bg-cover rounded-xl border-0 border-black shadow-2xl overflow-hidden flex"
       style="background-image: url(./images/tailwind-photos.jpeg)"
     >
       <div
         class="w-[300px] h-[300px] bg-white/20 m-auto backdrop-blur-xl rounded-full"
       ></div>
-    </div>
+    </div> -->
     <hr class="my-2" />
     <div class="flex justify-center">
       <span class="text-sm text-slate-500 mr-2">Light</span>
-      <input type="checkbox" id="toggle" class="" />
+      <input type="checkbox" id="toggle" class="hidden" />
       <label for="toggle">
         <div
           class="w-9 h-5 bg-slate-500 rounded-full flex items-center cursor-pointer p-0.5"
@@ -165,5 +165,16 @@
         </label>
       </form>
     </div>
+    <script>
+      const checkbox = document.querySelector("#toggle");
+
+      const html = document.querySelector("html");
+
+      checkbox.addEventListener("click", function () {
+        checkbox.checked
+          ? html.classList.add("dark")
+          : html.classList.remove("dark");
+      });
+    </script>
   </body>
 </html>
