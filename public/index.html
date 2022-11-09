@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,18 +12,20 @@
     />
     <title>Tailwind Learning</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style2.css" />
+
     <script>
       tailwind.config = {
         theme: {},
       };
     </script>
     <style>
-      /* * {
-        border: 1px solid red;
-      } */
+      /* TOGGLE */
+
+      /* TOGGLE */
     </style>
   </head>
-  <body>
+  <body class="font-poppins dark:bg-slate-900 dark:text-slate-200">
     <!-- <h1>Mari Belajar TailwindCSS</h1>
     <section class="mb-10">
       <h2>Spacing</h2>
@@ -35,7 +37,7 @@
       <div class="w-1/2">Kotak1</div>
       <div class="max-w-xs">Kotak 2</div>
     </section> -->
-    <section class="mb-10 font-poppins max-w-3xl mx-auto mt-10">
+    <section class="mb-10 max-w-3xl mx-auto mt-10">
       <h2 class="mb-4 text-5xl font-bold text-center">
         <span
           class="bg-gradient-to-r from-purple-500 via-blue-500 to-red-500 bg-clip-text text-transparent"
@@ -66,13 +68,13 @@
         aspernatur corporis aut reprehenderit.
       </p>
     </section>
-    <div
-      class="max-w-md h-[28rem] mt-10 bg-slate-200 mx-auto"
+    <!-- <div
+      class="max-w-md h-[28rem] mt-10 bg-slate-200 mx-auto overflow-y-scroll bg-scroll"
       style="
-        background-image: url('https://source.unsplash.com/448x448?whitehouse');
+        background-image: url('https://source.unsplash.com/448x448?mountain');
       "
     >
-      <p>
+      <p class="p-10 text-justify text-white">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
         dignissimos dicta tempora culpa atque dolores, quibusdam labore tenetur
         laborum, doloremque ut recusandae, inventore accusamus. Repellendus aut
@@ -101,6 +103,67 @@
         officia assumenda facilis fuga ea saepe ab nemo? Animi accusamus
         veritatis autem?
       </p>
+    </div> -->
+    <div
+      class="my-10 max-w-xl mx-auto h-96 bg-slate-300 bg-cover rounded-xl border-0 border-black shadow-2xl overflow-hidden flex"
+      style="background-image: url(./images/tailwind-photos.jpeg)"
+    >
+      <div
+        class="w-[300px] h-[300px] bg-white/20 m-auto backdrop-blur-xl rounded-full"
+      ></div>
+    </div>
+    <hr class="my-2" />
+    <div class="flex justify-center">
+      <span class="text-sm text-slate-500 mr-2">Light</span>
+      <input type="checkbox" id="toggle" class="" />
+      <label for="toggle">
+        <div
+          class="w-9 h-5 bg-slate-500 rounded-full flex items-center cursor-pointer p-0.5"
+        >
+          <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
+        </div>
+      </label>
+      <span class="text-sm text-slate-500 ml-2">Dark</span>
+    </div>
+    <div class="w-full">
+      <button
+        class="my-10 bg-blue-500 px-8 py-2 text-white font-semibold hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-400 mx-auto flex rounded-3xl"
+      >
+        Simpan
+      </button>
+    </div>
+    <div
+      class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md group hover:bg-gradient-to-tr from-cyan-500 to-blue-500"
+    >
+      <h5 class="font-semibold text-xl mb-2 group-hover:text-white">My Card</h5>
+      <p
+        class="font-normal text-sm group-hover:text-white selection:bg-white selection:text-black"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nulla
+        est tenetur nesciunt, eaque asperiores enim animi velit porro corporis.
+      </p>
+    </div>
+    <div
+      class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md text-sm dark:bg-white"
+    >
+      <form action="">
+        <label for="email">
+          <span
+            class="block font-semibold mb-2 text-slate-700 after:content-['*'] after:text-pink-500 after:ml-0.5"
+            >Email</span
+          >
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email"
+            class="px-3 py-3 rounded-md w-full block border focus:outline-none focus:ring-1 focus:border-sky-500 focus:ring-sky-500 invalid:text-pink-700 invalid:focus:ring-pink-700 invalid:focus:border-pink-700 peer"
+          />
+          <p class="text-sm mt-2 text-pink-700 invisible peer-invalid:visible">
+            Email tidak valid
+          </p>
+        </label>
+      </form>
     </div>
   </body>
 </html>
